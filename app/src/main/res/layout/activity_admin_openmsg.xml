@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ambulans"
+            android:text="Mohon Maaf Ambulans Tidak Tersedia"
+            android:gravity="center"
+            android:textColor="#b7b7b7"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ambulans"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ambulance1_01" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ambulans"
+            android:text="Rekomendasi"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

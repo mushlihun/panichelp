@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/img"
+        android:src="@drawable/bidan_01"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Naturally Flavored Fruit &amp; Herb Detox Water"
+        android:id="@+id/txttitle"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:lines="1"
+        android:paddingTop="10dp"
+        android:ellipsize="marquee"
+        android:layout_alignTop="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="This tasty brew only takes ten minutes to prepare."
+        android:id="@+id/txtdesc"
+        android:layout_marginRight="15dp"
+        android:lines="2"
+        android:paddingBottom="10dp"
+        android:ellipsize="end"
+        android:layout_below="@+id/txttitle"
+        android:layout_alignLeft="@+id/txttitle"
+        android:layout_alignStart="@+id/txttitle" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/titleRs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageRs"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/clinic_01" />
+
+            <TextView
+                android:id="@+id/nameRs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RSUD DEPOK"
+                android:textColor="#b7b7b7"
+                android:textSize="35sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageRs"
+                android:layout_toEndOf="@+id/imageRs" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleRs">
+
+            <TextView
+                android:id="@+id/addressRs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Jl.Kebangsaan 1 no 10, Depok"
+                android:textColor="#b7b7b7"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/idadmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressRs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="ID : RSUDDPKADM"
+                android:textColor="#b7b7b7"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:onClick="mailClick"
+                android:src="@drawable/message_01"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/mail"
+                android:layout_alignTop="@id/mail"
+                android:background="@drawable/badge_circle"
+                android:text="04"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ambulanstat"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:onClick="ambulanstatClick"
+                android:src="@drawable/ambulance1_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/ambulanstat"
+                android:layout_alignTop="@id/ambulanstat"
+                android:background="@drawable/badge_circle"
+                android:text="02"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
